@@ -1,0 +1,77 @@
+<%= form_with(model: applicant, local: true) do |form| %>
+  <% if applicant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(applicant.errors.count, "error") %> prohibited this applicant from being saved:</h2>
+
+      <ul>
+        <% applicant.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :account_id %>
+    <%= form.text_field :account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profession %>
+    <%= form.text_field :profession %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :school %>
+    <%= form.text_field :school %>
+  </div>
+
+  <div class="field">
+    <%= form.label :degree %>
+    <%= form.text_field :degree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grad_date %>
+    <%= form.date_select :grad_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exp_position %>
+    <%= form.text_field :exp_position %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exp_description %>
+    <%= form.text_area :exp_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exp_from %>
+    <%= form.date_select :exp_from %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exp_to %>
+    <%= form.date_select :exp_to %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zipcode %>
+    <%= form.text_field :zipcode %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

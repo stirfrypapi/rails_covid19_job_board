@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Applicants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Account</th>
+      <th>Profession</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>School</th>
+      <th>Degree</th>
+      <th>Grad date</th>
+      <th>Exp position</th>
+      <th>Exp description</th>
+      <th>Exp from</th>
+      <th>Exp to</th>
+      <th>Zipcode</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @applicants.each do |applicant| %>
+      <tr>
+        <td><%= applicant.account_id %></td>
+        <td><%= applicant.profession %></td>
+        <td><%= applicant.first_name %></td>
+        <td><%= applicant.last_name %></td>
+        <td><%= applicant.school %></td>
+        <td><%= applicant.degree %></td>
+        <td><%= applicant.grad_date %></td>
+        <td><%= applicant.exp_position %></td>
+        <td><%= applicant.exp_description %></td>
+        <td><%= applicant.exp_from %></td>
+        <td><%= applicant.exp_to %></td>
+        <td><%= applicant.zipcode %></td>
+        <td><%= link_to 'Show', applicant %></td>
+        <td><%= link_to 'Edit', edit_applicant_path(applicant) %></td>
+        <td><%= link_to 'Destroy', applicant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Applicant', new_applicant_path %>

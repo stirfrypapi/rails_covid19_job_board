@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account: one
+  profession: MyString
+  first_name: MyString
+  last_name: MyString
+  school: MyString
+  degree: MyString
+  grad_date: 2020-03-28
+  exp_position: MyString
+  exp_description: MyText
+  exp_from: 2020-03-28
+  exp_to: 2020-03-28
+  zipcode: MyString
+
+two:
+  account: two
+  profession: MyString
+  first_name: MyString
+  last_name: MyString
+  school: MyString
+  degree: MyString
+  grad_date: 2020-03-28
+  exp_position: MyString
+  exp_description: MyText
+  exp_from: 2020-03-28
+  exp_to: 2020-03-28
+  zipcode: MyString
