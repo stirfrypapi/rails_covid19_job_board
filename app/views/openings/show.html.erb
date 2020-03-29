@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Employer:</strong>
+  <%= @opening.employer_id %>
+</p>
+
+<p>
+  <strong>Date posted:</strong>
+  <%= @opening.date_posted %>
+</p>
+
+<p>
+  <strong>Urgency:</strong>
+  <%= @opening.urgency %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @opening.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @opening.description %>
+</p>
+
+<p>
+  <strong>Deadline:</strong>
+  <%= @opening.deadline %>
+</p>
+
+<%= link_to 'Edit', edit_opening_path(@opening) %> |
+<%= link_to 'Back', openings_path %>

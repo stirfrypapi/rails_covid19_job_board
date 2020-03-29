@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employer: one
+  date_posted: 2020-03-28
+  urgency: MyString
+  title: MyString
+  description: MyText
+  deadline: 2020-03-28
+
+two:
+  employer: two
+  date_posted: 2020-03-28
+  urgency: MyString
+  title: MyString
+  description: MyText
+  deadline: 2020-03-28
